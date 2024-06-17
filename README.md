@@ -1,10 +1,36 @@
 List of Commands
 
 - Install Warp Terminal
-- /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-- brew install warp
-- vim ~/.zshrc
-- source ~/.zshrc
+- Install Homebrew
+  - ```
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    ```
+- Install Warp
+  -  ```
+     brew install warp
+     ```
+  - vim ~/.zshrc
+  - source ~/.zshrc
+
+- Install ZSH
+
+  - ```
+    brew install zsh
+    ```
+  - ```
+    chsh -s $(which zsh)
+    ```
+  - ```
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    ```
+  - vim ~/.zshrc
+  - source ~/.zshrc
+  - Install OMZ
+  - ```
+    git clone https://github.com/TamCore/autoupdate-oh-my-zsh-plugins ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/autoupdatenn
+    ```
+
+
 
 - INSTALL IOS 15.2 and Android Studio from online
 
@@ -18,15 +44,8 @@ List of Commands
     - sudo xcodebuild -license accept
   - https://developer.android.com/studio/
 
-- Install ZSH
 
-  - brew install zsh
-  - chsh -s $(which zsh)
-  - sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-  - vim ~/.zshrc
-  - source ~/.zshrc
-  - Install OMZ
-  - git clone https://github.com/TamCore/autoupdate-oh-my-zsh-plugins ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/autoupdatenn
+
 
 - Install Java
   - ```
@@ -49,10 +68,12 @@ List of Commands
       ```
     - source ~/.zshrc
     
-# Verify the change
-java -version
+    - Verify the change
+      java -version
 
-- Install NVM
+
+
+# Install NVM
 
   - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
   - nvm --version
