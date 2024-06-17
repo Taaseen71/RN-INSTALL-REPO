@@ -95,45 +95,82 @@ List of Commands
     - ```
       nvm alias default 21.6.2
       ```
-      - (will update to load everytime a new terminal is opened)
-    - nvm use 20.10.0
-      - (will apply change only to current terminal window)
+      (will update to load everytime a new terminal is opened)
+    - ```
+      nvm use 20.10.0
+      ```
+      (will apply change only to current terminal window)
     - node -v
+   
 
-- cd usr/libexec/java_home
-- ls | grep 'java_home'
 
-- INSTALL YARN
+
+# INSTALL YARN
+
   - check if yarn is installed through npm or brew (brew: 
-    - npm list -g yarn
-    - brew list yarn
-    - which yarn
-  - brew install yarn@1.22.21
+    - ```
+      npm list -g yarn
+      ```
+    - ```
+      brew list yarn
+      ```
+    - check directory:
+                      ```
+                        which yarn
+                      ```
+  - ```
+    brew install yarn@1.22.21
+    ```
   - yarn -v
-  - npm install -g yarn@1.22.21
+  - ```
+    npm install -g yarn@1.22.21
+    ```
   - yarn -v
   - npm --version (10.2.3)
+  #### using Corepack (use a specific version of yarn in a specific directory)
+    - if the root folder has a .yarn file
+    - brew install corepack
+    - go to the root of the repo
+    - ```
+      corepack enable
+      ```
+    - ```
+      yarn set version stable
+      ```
+      - yarn will search for available versions
+     
+        
 
-- Install Watchman
+# Install Watchman
   - brew install watchman
-- INSTALL COCOAPODS
+
+
+# INSTALL COCOAPODS
 
   - First install Ruby gems
   - brew install rbenv ruby-build
-  - rbenv install 3.0.6
-  - rbenv local 3.0.6
-  - rbenv global 3.0.6
+  - ```
+      rbenv install 3.0.6
+    ```
+  - ```
+      rbenv local 3.0.6
+    ```
+  - ```
+      rbenv global 3.0.6
+    ```
   - Cocoapods
-  - sudo gem install drb -v 2.0.6
-  - sudo gem install cocoapods -v 1.15.2
+    - (sudo gem install drb -v 2.0.6)
+    - ```
+      sudo gem install cocoapods -v 1.15.2
+      ```
 
-- Install VSCODE
+# Install VSCODE
   - brew install --cask vscodium
   - Install shell shortcut
   - Cmd + shift + p
   - Type in >shell
   - Create shell command.
-  - It will create shell command sodium.
+  - It will create shell command 'code .'
   - Create alias function for this in ~/.zshrc
   - #VSCODE shortcut
     - function
