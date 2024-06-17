@@ -28,7 +28,29 @@ List of Commands
   - Install OMZ
   - git clone https://github.com/TamCore/autoupdate-oh-my-zsh-plugins ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/autoupdatenn
 
-- brew install --cask zulu@17
+- Install Java
+  - ```
+    brew install --cask zulu@17
+    ```
+  - or 
+    ```
+    brew install --cask zulu@11
+    ```
+  - installs Java 11 or 17
+  - ```
+    brew list --cask
+    ```
+  - To Switch Java Version:
+    - go to vim ~/.zshrc
+    - edit java Version
+    - ```
+          #export JAVA_HOME=/Library/Java/JavaVirtualMachines/Zulu-11.jdk/Contents/Home
+          export JAVA_HOME=/Library/Java/JavaVirtualMachines/Zulu-17.jdk/Contents/Home
+      ```
+    - source ~/.zshrc
+    
+# Verify the change
+java -version
 
 - Install NVM
 
@@ -39,12 +61,18 @@ List of Commands
   - nvm --version
   - nvm install v20.10.0
   - node -v
+  - To switch node versions:
+    - nvm use 20.10.0
+    - node -v
 
 - cd usr/libexec/java_home
 - ls | grep 'java_home'
 
 - INSTALL YARN
-
+  - check if yarn is installed through npm or brew (brew: 
+    - npm list -g yarn
+    - brew list yarn
+    - which yarn
   - brew install yarn@1.22.21
   - yarn -v
   - npm install -g yarn@1.22.21
@@ -97,6 +125,12 @@ fi
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+
+##Java
+#export JAVA_HOME=/Library/Java/JavaVirtualMachines/Zulu-11.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/Zulu-17.jdk/Contents/Home
+export PATH=$JAVA_HOME/bin:$PATH
 
 ################################################################
 
