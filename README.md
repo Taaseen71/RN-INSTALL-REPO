@@ -1,18 +1,19 @@
 List of Commands
 
-- Install Warp Terminal
-- Install Homebrew
+# Install Homebrew
+
   - ```
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     ```
-- Install Warp
+# Install Warp Terminal    
+
   -  ```
      brew install warp
      ```
   - vim ~/.zshrc
   - source ~/.zshrc
 
-- Install ZSH
+# Install ZSH
 
   - ```
     brew install zsh
@@ -32,12 +33,16 @@ List of Commands
 
 
 
-- INSTALL IOS 15.2 and Android Studio from online
+# INSTALL IOS 15.2 and Android Studio from online
 
   - https://xcodereleases.com/
-    - https://download.developer.apple.com/Developer_Tools/Xcode_15.2/Xcode_15.2.xip
+    - ```
+      https://download.developer.apple.com/Developer_Tools/Xcode_15.2/Xcode_15.2.xip
+      ```
     - Before moving to application folder, rename it to Xcode-15.2.app
-    - sudo xcode-select -switch /Applications/Xcode-15.2.app
+    - ```
+      sudo xcode-select -switch /Applications/Xcode-15.2.app
+      ```
     - xcode-select --install
     - xcode-select --print-path
     - xcodebuild -version
@@ -66,24 +71,33 @@ List of Commands
           #export JAVA_HOME=/Library/Java/JavaVirtualMachines/Zulu-11.jdk/Contents/Home
           export JAVA_HOME=/Library/Java/JavaVirtualMachines/Zulu-17.jdk/Contents/Home
       ```
-    - source ~/.zshrc
-    
+    - source ~/.zshrc    
     - Verify the change
       java -version
 
 
 
+
+
 # Install NVM
 
-  - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+  - ```
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+    ```
   - nvm --version
   - vim ~/.zshrc
   - source ~/.zshrc
   - nvm --version
-  - nvm install v20.10.0
-  - node -v
+    - nvm install v20.10.0
+    - nvm install v21.6.2
+    - node -v
   - To switch node versions:
+    - ```
+      nvm alias default 21.6.2
+      ```
+      - (will update to load everytime a new terminal is opened)
     - nvm use 20.10.0
+      - (will apply change only to current terminal window)
     - node -v
 
 - cd usr/libexec/java_home
