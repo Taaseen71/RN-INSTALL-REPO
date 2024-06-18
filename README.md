@@ -166,6 +166,10 @@ List of Commands
     - ```
       sudo gem install cocoapods -v 1.15.2
       ```
+    - ```
+      sudo gem install cocoapods-switch
+      ```
+      - ```cocoapods-switch 1.15.2```
 
 # Install VSCODE
   - brew install --cask vscodium
