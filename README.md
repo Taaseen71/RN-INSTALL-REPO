@@ -127,8 +127,8 @@ List of Commands
     ```
   - yarn -v
   - npm --version (10.2.3)
-  #### using Corepack (use a specific version of yarn in a specific directory)
-    - if the root folder has a .yarn file
+  #### Using Corepack (use a specific version of yarn in a specific directory)
+    - if the package.json has a "packageManager": "yarn@x.x.x" line added.
     - brew install corepack
     - go to the root of the repo
     - ```
