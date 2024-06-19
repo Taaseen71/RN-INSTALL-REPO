@@ -96,7 +96,7 @@ List of Commands
       (will update to load everytime a new terminal is opened)
     - ```nvm use 20.10.0```
       (will apply change only to current terminal window)
-    - node -v
+    - ```node -v```
    
 
 
@@ -142,16 +142,16 @@ List of Commands
 # INSTALL COCOAPODS
 
   - First install Ruby gems
-  - brew install rbenv ruby-build
-  - ```
-      rbenv install 3.0.6
-    ```
-  - ```
-      rbenv local 3.0.6
-    ```
-  - ```
-      rbenv global 3.0.6
-    ```
+    - ```brew install rbenv ruby-build```
+    - ```
+        rbenv install 3.0.6
+      ```
+    - ```
+        rbenv local 3.0.6
+      ```
+    - ```
+        rbenv global 3.0.6
+      ```
   - Cocoapods
     - (sudo gem install drb -v 2.0.6)
     - ```
@@ -163,18 +163,19 @@ List of Commands
       - ```cocoapods-switch 1.15.2```
 
 # Install VSCODE
-  - brew install --cask vscodium
+  - ```brew install --cask vscodium```
   - Install shell shortcut
   - Cmd + shift + p
   - Type in >shell
   - Create shell command.
-  - It will create shell command 'code .'
+  - It will create shell command ```code .```  
   - Create alias function for this in ~/.zshrc
-  - #VSCODE shortcut
-    - function
-      code(){
-      codium "$1"
-      }
+    - ```
+      #VSCODE shortcut
+        function code(){
+          codium "$1"
+        }
+      ```
   - Now we’re allowed to use code .
 
 
@@ -183,7 +184,7 @@ List of Commands
 
 
 
-### .zshrc file
+# ```vim .zshrc``` file
 ```
 ################################EDITBELOW#######################
 ##PATHS##
