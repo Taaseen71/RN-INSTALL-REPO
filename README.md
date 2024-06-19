@@ -27,9 +27,14 @@ List of Commands
   - ```vim ~/.zshrc```
   - ```source ~/.zshrc```
   - Install OMZ
-  - ```
-    git clone https://github.com/TamCore/autoupdate-oh-my-zsh-plugins ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/autoupdate
-    ```
+    - [walkthrough](https://github.com/ohmyzsh/ohmyzsh)
+    - ```
+      sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+      ```
+    - 
+    - ```
+      git clone https://github.com/TamCore/autoupdate-oh-my-zsh-plugins ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/autoupdate
+      ```
 
 
 
@@ -228,7 +233,8 @@ alias home="cd ~/"
 
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
+#ZSH_THEME="robbyrussell"
 
 plugins=(git)
 
