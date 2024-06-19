@@ -184,7 +184,7 @@ List of Commands
 
 
 
-# ```vim .zshrc``` file
+# ```vim ~/.zshrc``` file
 ```
 ################################EDITBELOW#######################
 ##PATHS##
