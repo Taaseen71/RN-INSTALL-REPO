@@ -73,7 +73,7 @@ List of Commands
       ```
     - ```source ~/.zshrc```
     - Verify the change
-      java -version
+      ```java --version```
 
 
 
@@ -87,7 +87,7 @@ List of Commands
   - ```nvm --version```
   - ```vim ~/.zshrc```
   - ```source ~/.zshrc```
-  - nvm --version
+  - ```nvm --version```
     - ```nvm install v20.10.0```
     - ```nvm install v21.6.2```
     - ```node -v```
@@ -118,8 +118,8 @@ List of Commands
   - ```
     npm install -g yarn@1.22.21
     ```
-  - yarn -v
-  - npm --version (10.2.3)
+  - ```yarn -v```
+  - ```npm --version``` (10.2.3)
 
   
 #### Using Corepack (use a specific version of yarn in a specific directory) 
@@ -183,7 +183,7 @@ List of Commands
 
 
 
-##.zshrc file
+### .zshrc file
 ```
 ################################EDITBELOW#######################
 ##PATHS##
