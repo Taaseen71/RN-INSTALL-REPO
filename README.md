@@ -10,8 +10,8 @@ List of Commands
   -  ```
      brew install warp
      ```
-  - vim ~/.zshrc
-  - source ~/.zshrc
+  - ```vim ~/.zshrc```
+  - ```source ~/.zshrc```
 
 # Install ZSH
 
@@ -24,8 +24,8 @@ List of Commands
   - ```
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     ```
-  - vim ~/.zshrc
-  - source ~/.zshrc
+  - ```vim ~/.zshrc```
+  - ```source ~/.zshrc```
   - Install OMZ
   - ```
     git clone https://github.com/TamCore/autoupdate-oh-my-zsh-plugins ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/autoupdatenn
@@ -43,10 +43,10 @@ List of Commands
     - ```
       sudo xcode-select -switch /Applications/Xcode-15.2.app
       ```
-    - xcode-select --install
-    - xcode-select --print-path
-    - xcodebuild -version
-    - sudo xcodebuild -license accept
+    - ```xcode-select --install```
+    - ```xcode-select --print-path```
+    - ```xcodebuild -version```
+    - ```sudo xcodebuild -license accept```
   - https://developer.android.com/studio/
 
 
@@ -65,13 +65,13 @@ List of Commands
     brew list --cask
     ```
   - To Switch Java Version:
-    - go to vim ~/.zshrc
+    - go to ```vim ~/.zshrc```
     - edit java Version
     - ```
           #export JAVA_HOME=/Library/Java/JavaVirtualMachines/Zulu-11.jdk/Contents/Home
           export JAVA_HOME=/Library/Java/JavaVirtualMachines/Zulu-17.jdk/Contents/Home
       ```
-    - source ~/.zshrc    
+    - ```source ~/.zshrc```
     - Verify the change
       java -version
 
@@ -84,21 +84,17 @@ List of Commands
   - ```
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
     ```
+  - ```nvm --version```
+  - ```vim ~/.zshrc```
+  - ```source ~/.zshrc```
   - nvm --version
-  - vim ~/.zshrc
-  - source ~/.zshrc
-  - nvm --version
-    - nvm install v20.10.0
-    - nvm install v21.6.2
-    - node -v
+    - ```nvm install v20.10.0```
+    - ```nvm install v21.6.2```
+    - ```node -v```
   - To switch node versions:
-    - ```
-      nvm alias default 21.6.2
-      ```
+    - ```nvm alias default 21.6.2```
       (will update to load everytime a new terminal is opened)
-    - ```
-      nvm use 20.10.0
-      ```
+    - ```nvm use 20.10.0```
       (will apply change only to current terminal window)
     - node -v
    
@@ -114,14 +110,11 @@ List of Commands
     - ```
       brew list yarn
       ```
-    - check directory:
-                      ```
-                        which yarn
-                      ```
+    - check directory: ```which yarn```
   - ```
     brew install yarn@1.22.21
     ```
-  - yarn -v
+  - ```yarn -v```
   - ```
     npm install -g yarn@1.22.21
     ```
@@ -134,18 +127,16 @@ List of Commands
   - if the package.json has a "packageManager": "yarn@x.x.x" line added.
   - brew install corepack
   - go to the root of the repo
-  - ```
-    corepack enable
-    ```
-  - ```
-    yarn set version stable
-    ```
+  - ```corepack enable```
+  - ```yarn set version stable```
     - yarn will search for available versions
 
         
 
 # Install Watchman
-  - brew install watchman
+  - ```
+    brew install watchman
+    ```
 
 
 # INSTALL COCOAPODS
@@ -186,25 +177,27 @@ List of Commands
       }
   - Now we’re allowed to use code .
 
+
+
+
+
+
+
+##.zshrc file
+```
 ################################EDITBELOW#######################
 ##PATHS##
 export PATH="/opt/homebrew/bin:$PATH"
 
+##NVM
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion" # This loads nvm bash_completion
-
-# Add Node.js binary directory to PATH if it's not already added
-
-if [[":$PATH:" != *":$HOME/.nvm/versions/node/v20.10.0/bin:"*]]; then
-export PATH="$HOME/.nvm/versions/node/v20.10.0/bin:$PATH"
-fi
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # Th
 
 ##Android
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
-
 
 ##Java
 #export JAVA_HOME=/Library/Java/JavaVirtualMachines/Zulu-11.jdk/Contents/Home
@@ -213,10 +206,11 @@ export PATH=$JAVA_HOME/bin:$PATH
 
 ################################################################
 
+
 ##ALIASES
 #VSCODE shortcut
 function code(){
-codium "$1"
+    codium "$1"
 }
 
 #APP DIRECTORY Shortcut
@@ -227,7 +221,7 @@ alias home="cd ~/"
 
 ################################################################
 
-export NO_PROXY="_.ghcr.io,_.ssl.scandit.com, _.github.com, _.googlesource.com"
+# export NO_PROXY="*.ghcr.io,*.ssl.scandit.com, *.github.com, *.googlesource.com"
 
 ################################################################
 
@@ -238,3 +232,9 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+
+
+###################################################################
+
+eval "$(rbenv init -)"
+```
