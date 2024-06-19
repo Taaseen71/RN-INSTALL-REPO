@@ -35,7 +35,7 @@ List of Commands
 
 # INSTALL IOS 15.2 and Android Studio from online
 
-  - https://xcodereleases.com/
+  - [XCode Releases](https://xcodereleases.com/)
     - ```
       https://download.developer.apple.com/Developer_Tools/Xcode_15.2/Xcode_15.2.xip
       ```
@@ -47,7 +47,7 @@ List of Commands
     - ```xcode-select --print-path```
     - ```xcodebuild -version```
     - ```sudo xcodebuild -license accept```
-  - https://developer.android.com/studio/
+  - [Android Studio Download Here](https://developer.android.com/studio/)
 
 
 
