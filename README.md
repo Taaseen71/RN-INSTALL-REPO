@@ -8,7 +8,7 @@ List of Commands
 # Install Warp Terminal    
 
   -  ```
-     brew install warp
+     brew install --cask warp
      ```
   - ```vim ~/.zshrc```
   - ```source ~/.zshrc```
@@ -21,12 +21,10 @@ List of Commands
   - ```
     chsh -s $(which zsh)
     ```
-  - ```
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-    ```
   - ```vim ~/.zshrc```
   - ```source ~/.zshrc```
-  - Install OMZ
+    
+  - Install OhMyZsh
     - [walkthrough](https://github.com/ohmyzsh/ohmyzsh)
     - ```
       sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
