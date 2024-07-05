@@ -68,7 +68,7 @@ List of Commands
     brew list --cask
     ```
   - To Switch Java Version:
-    - go to ```vim ~/.zshrc```
+    - go to ```vim ~/.zshrc``` or use zprofile
     - edit java Version
     - ```
           #export JAVA_HOME=/Library/Java/JavaVirtualMachines/Zulu-11.jdk/Contents/Home
@@ -87,6 +87,7 @@ List of Commands
   - ```
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
     ```
+  - copy the last message and paste in the terminal, or close and reopen the terminal
   - ```nvm --version```
   - ```vim ~/.zshrc```
   - ```source ~/.zshrc```
